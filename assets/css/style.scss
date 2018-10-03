@@ -1,0 +1,35 @@
+$panel-borderColor: #f57c00;
+
+html body {
+  background: url(../images/train.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.box {
+  height: 300px;
+  .jumbo{
+    position: relative;
+    top: 80px;
+  }
+}
+
+.my-panel {
+  margin-top: 15px;
+  border: 2px solid $panel-borderColor;
+  border-radius: 8px;
+  h6 {
+    margin-top: 0;
+    padding: 10px;
+
+  }
+  button {
+    margin-left: 10px;
+  }
+}
+
+.push {
+  margin-bottom: 60px;
+}

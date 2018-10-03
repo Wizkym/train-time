@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Train Time</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Moment js CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.js"></script>
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="container indigo lighten-1 white-text box">
+    <h1 class="jumbo center-align">Anytime is Train Time</h1>
+    <h5 class="jumbo center-align">Choo Choo. Chee Chee</h5>
+</div>
+
+<div class="container my-panel white">
+    <h6 class="orange darken-2 white-text">Current Train Schedule</h6>
+    <table id="trains" class="highlight responsive-table">
+        <thead>
+        <tr>
+            <th>Train Name</th>
+            <th>Destination</th>
+            <th>Frequency(mins)</th>
+            <th>Next Arrival</th>
+            <th>Minutes Away</th>
+        </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<div class="container my-panel white">
+    <h6 class="orange darken-2 white-text">Add Train</h6>
+    <div class="row">
+        <form class="col-s12 my-form">
+            <div class="input-field col s12">
+                <input id="train_name" type="text" class="validate">
+                <label for="train_name">Train Name</label>
+            </div>
+
+            <div class="input-field col s12">
+                <input id="destination" type="text" class="validate">
+                <label for="destination">Destination</label>
+            </div>
+
+            <div class="input-field col s12">
+                <input id="first" type="text" class="validate">
+                <label for="first">First Train Time (HH:mm-military time)</label>
+            </div>
+
+            <div class="input-field col s12">
+                <input id="frequency" type="text" class="validate">
+                <label for="frequency">Frequency (min)</label>
+            </div>
+
+            <button class="btn  indigo lighten-1 waves-effect waves-light"  id="add" type="submit" name="action">Submit
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+    </div>
+</div>
+
+<!-- add space at the bottom -->
+<div class="push"></div>
+
+<!-- jquery CDN -->
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<!-- Link  to Firebase -->
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/5.5.2/firebase-database.js"></script>
+<!-- link to my script file -->
+<script src="assets/javascript/app.js"></script>
+</body>
+</html>
