@@ -1,8 +1,6 @@
-let myAPIKey = myConfig.API_KEY;
-
 // Initialize Firebase
 var config = {
-    apiKey: myAPIKey,
+    apiKey: "AIzaSyB7jgO4A0Xx0moWAdfZicijpLGHdY3Yo5s",
     authDomain: "gt201808-f18f3.firebaseapp.com",
     databaseURL: "https://gt201808-f18f3.firebaseio.com",
     projectId: "gt201808-f18f3",
